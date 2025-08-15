@@ -6,6 +6,7 @@ from langchain.document_loaders import TextLoader
 from langchain.text_splitter import CharacterTextSplitter
 from supabase.client import create_client, Client
 
+
 # Set your keys (hardcoded as provided; move to env for security)
 os.environ["GOOGLE_API_KEY"] = "AIzaSyAm_B7ME_BVTE89Wc8Lg-FLsBjxXP-b1Q0"
 SUPABASE_URL = "https://rfckjjhbbvuirbtczvod.supabase.co"
