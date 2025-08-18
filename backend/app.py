@@ -14,8 +14,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 class Query(BaseModel):
     query: str
+
 
 @app.post("/chat")
 async def chat(query: Query):
