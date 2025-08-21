@@ -24,6 +24,7 @@ class Query(BaseModel):
 @app.post("/chat")
 async def chat(query: Query):
     try:
+        
         response = rag_chain.run(query.query)
         return {"response": response}
     except Exception as e:
