@@ -20,7 +20,6 @@ app.add_middleware(
 class Query(BaseModel):
     query: str
 
-
 @app.post("/chat")
 async def chat(query: Query):
     try:
