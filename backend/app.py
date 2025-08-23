@@ -27,4 +27,5 @@ async def chat(query: Query):
         response = rag_chain.run(query.query)
         return {"response": response}
     except Exception as e:
+        
         return {"response": f"Error: {str(e)}"}
